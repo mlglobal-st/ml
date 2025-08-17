@@ -14,7 +14,15 @@ const Nav = () => {
       sublinks: [
         { label: "Oil & Gas", href: "#oil" },
         { label: "Projects", href: "#projects" },
-        { label: "Pipelines", href: "#pipelines" },
+        { label: "IPD & Maintenance", href: "#projects" },
+        { label: "GM & Consultancy", href: "#projects" },
+        { label: "IPD & Maintenance", href: "#projects" },
+        { label: "Projects", href: "#projects" },
+        { label: "Pipeline Engineering", href: "#pipeline" },
+        { label: "Renewable & HEP", href: "#Renewable" },
+        { label: "Nuclear & AEI", href: "#Nuclear" },
+        { label: "Rig Construction & OE", href: "#rig" },
+        { label: "Fuel Depot & Storage Facilities", href: "#fueldepot" },
       ],
     },
     {
@@ -26,8 +34,7 @@ const Nav = () => {
       ],
     },
     { label: "Investors", href: "#investors" },
-    { label: "Media", href: "#media" },
-    { label: "Careers", href: "#careers" },
+    { label: "About Us", href: "#About" },
     { label: "Contact", href: "#contact" },
   ];
 

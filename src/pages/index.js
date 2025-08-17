@@ -203,7 +203,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-lg">
-              <img src="/careers.jpg" alt="Team collaborating on site" className="w-full h-full object-cover" />
+              <img src="/team.jpg" alt="Team collaborating on site" className="w-full h-full object-cover" />
               <div className="absolute bottom-3 left-3 px-3 py-1.5 rounded bg-black/60 text-white text-xs">People first</div>
             </div>
           </div>
@@ -230,11 +230,11 @@ export default function Home() {
               <div className="mt-6 grid sm:grid-cols-2 gap-4">
                 <div className="p-4 rounded-lg bg-gray-50">
                   <div className="text-sm text-gray-500">Investor Relations</div>
-                  <div className="font-medium">investors@yourenergy.com</div>
+                  <div className="font-medium">mlglobalenergy@gmail.com</div>
                 </div>
                 <div className="p-4 rounded-lg bg-gray-50">
                   <div className="text-sm text-gray-500">Media Enquiries</div>
-                  <div className="font-medium">media@yourenergy.com</div>
+                  <div className="font-medium">+447742678190z</div>
                 </div>
               </div>
               <div className="mt-6 text-sm text-gray-600">Registered in England & Wales. Company No. 01234567</div>
