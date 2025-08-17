@@ -1,115 +1,247 @@
 import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
+  const news = [
+    {
+      date: "27 May 2025",
+      title: "Annual General Meeting – Operations Update",
+      excerpt:
+        "Key production and cash flow highlights ahead of the AGM; strategy focused on energy security and decarbonisation.",
+      href: "/news/agm-ops-update",
+    },
+    {
+      date: "12 Feb 2025",
+      title: "Full year 2024 operations update and 2025 guidance",
+      excerpt:
+        "Investment scaled to maintain production, maximise cash flow and reduce future emissions and operating costs.",
+      href: "/news/fy24-update",
+    },
+    {
+      date: "11 Aug 2025",
+      title: "Heather Alpha topsides removal completed",
+      excerpt:
+        "Major decommissioning milestone achieved with >95% material recovery expected through recycling and repurposing.",
+      href: "/news/heather-alpha-lift",
+    },
+  ];
+
+  const stats = [
+    { label: "Countries", value: "2", sub: "UK & Malaysia" },
+    { label: "Employees", value: "1,000+", sub: "Group-wide" },
+    { label: "Scope 1&2", value: "-40%", sub: "UK emissions since 2018" },
+  ];
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20`}
-    >
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/pages/index.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-white text-gray-900">
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="/hero1.jpg"
+            alt="Offshore platform at dawn"
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-40 text-white">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight max-w-3xl">
+            Energy security today, decarbonisation for tomorrow
+          </h1>
+          <p className="mt-4 text-lg md:text-xl max-w-2xl text-gray-100">
+            Applying operational excellence to optimise existing assets, reduce
+            emissions and enable the energy transition.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link
+              href="#operations"
+              className="px-5 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500"
+            >
+              Our operations
+            </Link>
+            <Link
+              href="#esg"
+              className="px-5 py-3 rounded-full bg-white/10 ring-1 ring-white/40 hover:bg-white/20"
+            >
+              Our ESG approach
+            </Link>
+          </div>
+        </div>
+      </section>
+
+       {/* Value props / KPI strip */}
+      <section className="bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200">
+            {stats.map((s) => (
+              <div key={s.label} className="py-8 md:py-10 flex flex-col items-center text-center">
+                <div className="text-3xl font-extrabold tracking-tight">{s.value}</div>
+                <div className="mt-1 text-gray-600">{s.label}</div>
+                <div className="text-sm text-gray-500">{s.sub}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Operations */}
+      <section id="operations" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold">Operations in the UK and Malaysia</h2>
+              <p className="mt-4 text-gray-700">
+                We focus on mature, late-life assets where we can responsibly optimise production, drive capital efficiency and reduce emissions.
+                Where possible, we repurpose infrastructure for renewable and decarbonisation projects before executing world-class decommissioning.
+              </p>
+              <ul className="mt-6 space-y-3 text-gray-700 list-disc list-inside">
+                <li>Production optimisation & integrity management</li>
+                <li>Electrification and flare reduction initiatives</li>
+                <li>Safe, efficient decommissioning with high recycling rates</li>
+              </ul>
+              <div className="mt-8 flex gap-3">
+                <Link href="#media" className="px-4 py-2 rounded-md bg-gray-900 text-white hover:bg-gray-700">Latest updates</Link>
+                <Link href="#contact" className="px-4 py-2 rounded-md ring-1 ring-gray-300 hover:bg-gray-100">Talk to our team</Link>
+              </div>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-lg">
+              <img src="/map.jpg" alt="Map highlighting UK & Malaysia" className="w-full h-full object-cover" />
+              <div className="absolute bottom-3 left-3 px-3 py-1.5 rounded bg-black/60 text-white text-xs">Illustrative footprint</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ESG */}
+      <section id="esg" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <h2 className="text-3xl md:text-4xl font-bold">Environmental, Social & Governance</h2>
+              <p className="mt-4 text-gray-700">
+                Our Board-approved approach focuses on five pillars: health & safety, environment, people, communities and business conduct.
+                We embed TCFD-aligned climate reporting and link rewards to multi‑year emissions reduction targets.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link href="#investors" className="px-4 py-2 rounded-md bg-emerald-600 text-white hover:bg-emerald-500">Reports & policies</Link>
+                <Link href="#contact" className="px-4 py-2 rounded-md ring-1 ring-gray-300 hover:bg-gray-100">Engage with ESG</Link>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2 relative rounded-2xl overflow-hidden shadow-lg">
+              <img src="/emission.jpg" alt="Technicians monitoring emissions dashboard" className="w-full h-full object-cover" />
+              <div className="absolute bottom-3 left-3 px-3 py-1.5 rounded bg-black/60 text-white text-xs">Decarbonisation in action</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Media / Press */}
+      <section id="media" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-end justify-between gap-6 mb-8">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold">Media & press releases</h2>
+              <p className="mt-2 text-gray-600">Browse the latest operations updates, results and decommissioning milestones.</p>
+            </div>
+            <Link href="/media" className="hidden sm:inline-flex px-4 py-2 rounded-md bg-gray-900 text-white hover:bg-gray-700">View all</Link>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {news.map((n) => (
+              <article key={n.title} className="group bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition overflow-hidden">
+                <div className="p-5">
+                  <time className="text-xs uppercase tracking-wide text-gray-500">{n.date}</time>
+                  <h3 className="mt-2 text-lg font-semibold group-hover:text-emerald-600">{n.title}</h3>
+                  <p className="mt-2 text-sm text-gray-600 line-clamp-3">{n.excerpt}</p>
+                </div>
+                <div className="px-5 pb-5">
+                  <Link href={n.href} className="text-sm font-medium text-emerald-700 hover:text-emerald-600">Read more →</Link>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div className="mt-8 sm:hidden">
+            <Link href="/media" className="inline-flex px-4 py-2 rounded-md bg-gray-900 text-white hover:bg-gray-700">View all</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Investors CTA */}
+      <section id="investors" className="py-20 bg-gray-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold">Investors</h2>
+              <p className="mt-4 text-gray-100">
+                Access the latest results, presentations and our strategic report. Stay informed on production guidance, capital allocation and
+                progress towards emissions reduction targets.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link href="/investors/reports" className="px-4 py-2 rounded-md bg-emerald-600 hover:bg-emerald-500">Reports & results</Link>
+                <Link href="/investors/contacts" className="px-4 py-2 rounded-md ring-1 ring-white/30 hover:bg-white/10">IR contacts</Link>
+              </div>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <img src="/tradechart.jpg" alt="Analyst reviewing financial charts" className="w-full h-full object-cover" />
+              <div className="absolute bottom-3 left-3 px-3 py-1.5 rounded bg-white/10 ring-1 ring-white/30 text-white text-xs">Transparent reporting</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Careers */}
+      <section id="careers" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold">Careers</h2>
+              <p className="mt-4 text-gray-700">
+                Join a team that thrives on problem‑solving and continuous improvement. We offer competitive benefits, learning opportunities and
+                the chance to shape the energy transition.
+              </p>
+              <div className="mt-8 flex gap-3">
+                <Link href="/careers" className="px-4 py-2 rounded-md bg-gray-900 text-white hover:bg-gray-700">Explore roles</Link>
+                <Link href="#contact" className="px-4 py-2 rounded-md ring-1 ring-gray-300 hover:bg-gray-100">Graduate pathway</Link>
+              </div>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-lg">
+              <img src="/careers.jpg" alt="Team collaborating on site" className="w-full h-full object-cover" />
+              <div className="absolute bottom-3 left-3 px-3 py-1.5 rounded bg-black/60 text-white text-xs">People first</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold">Get in touch</h2>
+              <p className="mt-4 text-gray-700">Have a project or enquiry? We’ll respond promptly.</p>
+              <form className="mt-8 grid grid-cols-1 gap-4">
+                <input className="h-11 px-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-600" placeholder="Full name" />
+                <input className="h-11 px-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-600" placeholder="Email" />
+                <textarea className="min-h-[120px] px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-600" placeholder="Message" />
+                <button type="button" className="h-11 px-6 rounded-md bg-emerald-600 text-white hover:bg-emerald-500 w-fit">Send message</button>
+              </form>
+            </div>
+            <div className="rounded-2xl border border-gray-200 p-6 bg-white shadow-sm">
+              <h3 className="text-lg font-semibold">Head office</h3>
+              <p className="text-gray-600 mt-1">London, United Kingdom</p>
+              <div className="mt-6 grid sm:grid-cols-2 gap-4">
+                <div className="p-4 rounded-lg bg-gray-50">
+                  <div className="text-sm text-gray-500">Investor Relations</div>
+                  <div className="font-medium">investors@yourenergy.com</div>
+                </div>
+                <div className="p-4 rounded-lg bg-gray-50">
+                  <div className="text-sm text-gray-500">Media Enquiries</div>
+                  <div className="font-medium">media@yourenergy.com</div>
+                </div>
+              </div>
+              <div className="mt-6 text-sm text-gray-600">Registered in England & Wales. Company No. 01234567</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
