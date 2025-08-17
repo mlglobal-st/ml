@@ -13,10 +13,8 @@ const Nav = () => {
       href: "#operations",
       sublinks: [
         { label: "Oil & Gas", href: "/oil" },
-        { label: "Projects", href: "/projects" },
-        { label: "IPD & Maintenance", href: "/projects" },
+        { label: "IPD & Maintenance", href: "/mainten" },
         { label: "GM & Consultancy", href: "/projects" },
-        { label: "IPD & Maintenance", href: "/projects" },
         { label: "Projects", href: "#projects" },
         { label: "Pipeline Engineering", href: "/pipeline" },
         { label: "Renewable & HEP", href: "/Renewable" },
