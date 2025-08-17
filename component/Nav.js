@@ -14,8 +14,7 @@ const Nav = () => {
       sublinks: [
         { label: "Oil & Gas", href: "/oil" },
         { label: "IPD & Maintenance", href: "/mainten" },
-        { label: "GM & Consultancy", href: "/projects" },
-        { label: "Projects", href: "#projects" },
+        { label: "GPM & Consultancy", href: "/projects" },
         { label: "Pipeline Engineering", href: "/pipeline" },
         { label: "Renewable & HEP", href: "/renewable" },
         { label: "Nuclear & AEI", href: "/nuclear" },
