@@ -12,30 +12,30 @@ const Nav = () => {
       label: "Operations",
       href: "#operations",
       sublinks: [
-        { label: "Oil & Gas", href: "#oil" },
+        { label: "Oil & Gas", href: "/oil" },
+        { label: "Projects", href: "/projects" },
+        { label: "IPD & Maintenance", href: "/projects" },
+        { label: "GM & Consultancy", href: "/projects" },
+        { label: "IPD & Maintenance", href: "/projects" },
         { label: "Projects", href: "#projects" },
-        { label: "IPD & Maintenance", href: "#projects" },
-        { label: "GM & Consultancy", href: "#projects" },
-        { label: "IPD & Maintenance", href: "#projects" },
-        { label: "Projects", href: "#projects" },
-        { label: "Pipeline Engineering", href: "#pipeline" },
-        { label: "Renewable & HEP", href: "#Renewable" },
-        { label: "Nuclear & AEI", href: "#Nuclear" },
-        { label: "Rig Construction & OE", href: "#rig" },
-        { label: "Fuel Depot & Storage Facilities", href: "#fueldepot" },
+        { label: "Pipeline Engineering", href: "/pipeline" },
+        { label: "Renewable & HEP", href: "/Renewable" },
+        { label: "Nuclear & AEI", href: "/Nuclear" },
+        { label: "Rig Construction & OE", href: "/rig" },
+        { label: "Fuel Depot & Storage Facilities", href: "/fueldepot" },
       ],
     },
     {
       label: "ESG",
       href: "#esg",
       sublinks: [
-        { label: "Environment", href: "#environment" },
-        { label: "Governance", href: "#governance" },
+        { label: "Environment", href: "/environment" },
+        { label: "Governance", href: "/governance" },
       ],
     },
     { label: "Investors", href: "#investors" },
-    { label: "About Us", href: "#About" },
-    { label: "Contact", href: "#contact" },
+    { label: "About Us", href: "/aboutus" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
@@ -43,7 +43,7 @@ const Nav = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="h-16 flex items-center justify-between">
           {/* Logo */}
-          <Link href="#" className="flex items-center gap-2">
+          <Link href="/#" className="flex items-center gap-2">
             <div className="h-8 w-8 rounded bg-emerald-600" />
             <span className="font-semibold">Ml global</span>
           </Link>

@@ -68,13 +68,18 @@ export default function Home() {
         </div>
       </section>
 
-       {/* Value props / KPI strip */}
+      {/* Value props / KPI strip */}
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200">
             {stats.map((s) => (
-              <div key={s.label} className="py-8 md:py-10 flex flex-col items-center text-center">
-                <div className="text-3xl font-extrabold tracking-tight">{s.value}</div>
+              <div
+                key={s.label}
+                className="py-8 md:py-10 flex flex-col items-center text-center"
+              >
+                <div className="text-3xl font-extrabold tracking-tight">
+                  {s.value}
+                </div>
                 <div className="mt-1 text-gray-600">{s.label}</div>
                 <div className="text-sm text-gray-500">{s.sub}</div>
               </div>
@@ -88,24 +93,47 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold">Operations in the UK and Malaysia</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Operations in the UK and Malaysia
+              </h2>
               <p className="mt-4 text-gray-700">
-                We focus on mature, late-life assets where we can responsibly optimise production, drive capital efficiency and reduce emissions.
-                Where possible, we repurpose infrastructure for renewable and decarbonisation projects before executing world-class decommissioning.
+                We focus on mature, late-life assets where we can responsibly
+                optimise production, drive capital efficiency and reduce
+                emissions. Where possible, we repurpose infrastructure for
+                renewable and decarbonisation projects before executing
+                world-class decommissioning.
               </p>
               <ul className="mt-6 space-y-3 text-gray-700 list-disc list-inside">
                 <li>Production optimisation & integrity management</li>
                 <li>Electrification and flare reduction initiatives</li>
-                <li>Safe, efficient decommissioning with high recycling rates</li>
+                <li>
+                  Safe, efficient decommissioning with high recycling rates
+                </li>
               </ul>
               <div className="mt-8 flex gap-3">
-                <Link href="#media" className="px-4 py-2 rounded-md bg-gray-900 text-white hover:bg-gray-700">Latest updates</Link>
-                <Link href="#contact" className="px-4 py-2 rounded-md ring-1 ring-gray-300 hover:bg-gray-100">Talk to our team</Link>
+                <Link
+                  href="#media"
+                  className="px-4 py-2 rounded-md bg-gray-900 text-white hover:bg-gray-700"
+                >
+                  Latest updates
+                </Link>
+                <Link
+                  href="#contact"
+                  className="px-4 py-2 rounded-md ring-1 ring-gray-300 hover:bg-gray-100"
+                >
+                  Talk to our team
+                </Link>
               </div>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-lg">
-              <img src="/map.jpg" alt="Map highlighting UK & Malaysia" className="w-full h-full object-cover" />
-              <div className="absolute bottom-3 left-3 px-3 py-1.5 rounded bg-black/60 text-white text-xs">Illustrative footprint</div>
+              <img
+                src="/map.jpg"
+                alt="Map highlighting UK & Malaysia"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-3 left-3 px-3 py-1.5 rounded bg-black/60 text-white text-xs">
+                Illustrative footprint
+              </div>
             </div>
           </div>
         </div>
@@ -116,21 +144,62 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl md:text-4xl font-bold">Environmental, Social & Governance</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Environmental, Social & Governance
+              </h2>
               <p className="mt-4 text-gray-700">
-                Our Board-approved approach focuses on five pillars: health & safety, environment, people, communities and business conduct.
-                We embed TCFD-aligned climate reporting and link rewards to multi‑year emissions reduction targets.
+                Our Board-approved approach focuses on five pillars: health &
+                safety, environment, people, communities and business conduct.
+                We embed TCFD-aligned climate reporting and link rewards to
+                multi‑year emissions reduction targets.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <Link href="#investors" className="px-4 py-2 rounded-md bg-emerald-600 text-white hover:bg-emerald-500">Reports & policies</Link>
-                <Link href="#contact" className="px-4 py-2 rounded-md ring-1 ring-gray-300 hover:bg-gray-100">Engage with ESG</Link>
+                <Link
+                  href="#investors"
+                  className="px-4 py-2 rounded-md bg-emerald-600 text-white hover:bg-emerald-500"
+                >
+                  Reports & policies
+                </Link>
+                <Link
+                  href="#contact"
+                  className="px-4 py-2 rounded-md ring-1 ring-gray-300 hover:bg-gray-100"
+                >
+                  Engage with ESG
+                </Link>
               </div>
             </div>
             <div className="order-1 lg:order-2 relative rounded-2xl overflow-hidden shadow-lg">
-              <img src="/emission.jpg" alt="Technicians monitoring emissions dashboard" className="w-full h-full object-cover" />
-              <div className="absolute bottom-3 left-3 px-3 py-1.5 rounded bg-black/60 text-white text-xs">Decarbonisation in action</div>
+              <img
+                src="/emission.jpg"
+                alt="Technicians monitoring emissions dashboard"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-3 left-3 px-3 py-1.5 rounded bg-black/60 text-white text-xs">
+                Decarbonisation in action
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* About Us */}
+
+      <section className="flex  md:h-full h-[90vh] md:w-[100%]  flex-wrap flex-col md:flex-wrap md:flex-row justify-between p-5">
+        <div className="md:w-[45%] w-full space-x-5 justify-around border rounded-2xl border-gray-200 hover:border-green-200 shadow-sm hover:shadow-md p-5 flex flex-col">
+          <h1 className=" text-4xl font-bold">About Us</h1>
+          <p className="md:w-4/6">
+            At ML Global Resources, we are more than an energy company — we are
+            a driving force behind the infrastructure that fuels nations,
+            empowers industries, and supports communities across the globe.
+          </p>
+          <Link href=""><p className= " text-blue-800">See More</p></Link>
+        </div>
+        <div className="md:w-3/6 w-full">
+          <img
+            src="/fourmen.jpg"
+            alt="men"
+            className="w-full h-full object-cover rounded-2xl"
+          />
         </div>
       </section>
 
@@ -139,27 +208,56 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between gap-6 mb-8">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold">Media & press releases</h2>
-              <p className="mt-2 text-gray-600">Browse the latest operations updates, results and decommissioning milestones.</p>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Media & press releases
+              </h2>
+              <p className="mt-2 text-gray-600">
+                Browse the latest operations updates, results and
+                decommissioning milestones.
+              </p>
             </div>
-            <Link href="/media" className="hidden sm:inline-flex px-4 py-2 rounded-md bg-gray-900 text-white hover:bg-gray-700">View all</Link>
+            <Link
+              href="/media"
+              className="hidden sm:inline-flex px-4 py-2 rounded-md bg-gray-900 text-white hover:bg-gray-700"
+            >
+              View all
+            </Link>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {news.map((n) => (
-              <article key={n.title} className="group bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition overflow-hidden">
+              <article
+                key={n.title}
+                className="group bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition overflow-hidden"
+              >
                 <div className="p-5">
-                  <time className="text-xs uppercase tracking-wide text-gray-500">{n.date}</time>
-                  <h3 className="mt-2 text-lg font-semibold group-hover:text-emerald-600">{n.title}</h3>
-                  <p className="mt-2 text-sm text-gray-600 line-clamp-3">{n.excerpt}</p>
+                  <time className="text-xs uppercase tracking-wide text-gray-500">
+                    {n.date}
+                  </time>
+                  <h3 className="mt-2 text-lg font-semibold group-hover:text-emerald-600">
+                    {n.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-gray-600 line-clamp-3">
+                    {n.excerpt}
+                  </p>
                 </div>
                 <div className="px-5 pb-5">
-                  <Link href={n.href} className="text-sm font-medium text-emerald-700 hover:text-emerald-600">Read more →</Link>
+                  <Link
+                    href={n.href}
+                    className="text-sm font-medium text-emerald-700 hover:text-emerald-600"
+                  >
+                    Read more →
+                  </Link>
                 </div>
               </article>
             ))}
           </div>
           <div className="mt-8 sm:hidden">
-            <Link href="/media" className="inline-flex px-4 py-2 rounded-md bg-gray-900 text-white hover:bg-gray-700">View all</Link>
+            <Link
+              href="/media"
+              className="inline-flex px-4 py-2 rounded-md bg-gray-900 text-white hover:bg-gray-700"
+            >
+              View all
+            </Link>
           </div>
         </div>
       </section>
@@ -171,17 +269,34 @@ export default function Home() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold">Investors</h2>
               <p className="mt-4 text-gray-100">
-                Access the latest results, presentations and our strategic report. Stay informed on production guidance, capital allocation and
-                progress towards emissions reduction targets.
+                Access the latest results, presentations and our strategic
+                report. Stay informed on production guidance, capital allocation
+                and progress towards emissions reduction targets.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <Link href="/investors/reports" className="px-4 py-2 rounded-md bg-emerald-600 hover:bg-emerald-500">Reports & results</Link>
-                <Link href="/investors/contacts" className="px-4 py-2 rounded-md ring-1 ring-white/30 hover:bg-white/10">IR contacts</Link>
+                <Link
+                  href="/investors/reports"
+                  className="px-4 py-2 rounded-md bg-emerald-600 hover:bg-emerald-500"
+                >
+                  Reports & results
+                </Link>
+                <Link
+                  href="/investors/contacts"
+                  className="px-4 py-2 rounded-md ring-1 ring-white/30 hover:bg-white/10"
+                >
+                  IR contacts
+                </Link>
               </div>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <img src="/tradechart.jpg" alt="Analyst reviewing financial charts" className="w-full h-full object-cover" />
-              <div className="absolute bottom-3 left-3 px-3 py-1.5 rounded bg-white/10 ring-1 ring-white/30 text-white text-xs">Transparent reporting</div>
+              <img
+                src="/tradechart.jpg"
+                alt="Analyst reviewing financial charts"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-3 left-3 px-3 py-1.5 rounded bg-white/10 ring-1 ring-white/30 text-white text-xs">
+                Transparent reporting
+              </div>
             </div>
           </div>
         </div>
@@ -194,17 +309,34 @@ export default function Home() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold">Careers</h2>
               <p className="mt-4 text-gray-700">
-                Join a team that thrives on problem‑solving and continuous improvement. We offer competitive benefits, learning opportunities and
-                the chance to shape the energy transition.
+                Join a team that thrives on problem‑solving and continuous
+                improvement. We offer competitive benefits, learning
+                opportunities and the chance to shape the energy transition.
               </p>
               <div className="mt-8 flex gap-3">
-                <Link href="/careers" className="px-4 py-2 rounded-md bg-gray-900 text-white hover:bg-gray-700">Explore roles</Link>
-                <Link href="#contact" className="px-4 py-2 rounded-md ring-1 ring-gray-300 hover:bg-gray-100">Graduate pathway</Link>
+                <Link
+                  href="/careers"
+                  className="px-4 py-2 rounded-md bg-gray-900 text-white hover:bg-gray-700"
+                >
+                  Explore roles
+                </Link>
+                <Link
+                  href="#contact"
+                  className="px-4 py-2 rounded-md ring-1 ring-gray-300 hover:bg-gray-100"
+                >
+                  Graduate pathway
+                </Link>
               </div>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-lg">
-              <img src="/team.jpg" alt="Team collaborating on site" className="w-full h-full object-cover" />
-              <div className="absolute bottom-3 left-3 px-3 py-1.5 rounded bg-black/60 text-white text-xs">People first</div>
+              <img
+                src="/team.jpg"
+                alt="Team collaborating on site"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-3 left-3 px-3 py-1.5 rounded bg-black/60 text-white text-xs">
+                People first
+              </div>
             </div>
           </div>
         </div>
@@ -216,12 +348,28 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold">Get in touch</h2>
-              <p className="mt-4 text-gray-700">Have a project or enquiry? We’ll respond promptly.</p>
+              <p className="mt-4 text-gray-700">
+                Have a project or enquiry? We’ll respond promptly.
+              </p>
               <form className="mt-8 grid grid-cols-1 gap-4">
-                <input className="h-11 px-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-600" placeholder="Full name" />
-                <input className="h-11 px-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-600" placeholder="Email" />
-                <textarea className="min-h-[120px] px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-600" placeholder="Message" />
-                <button type="button" className="h-11 px-6 rounded-md bg-emerald-600 text-white hover:bg-emerald-500 w-fit">Send message</button>
+                <input
+                  className="h-11 px-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-600"
+                  placeholder="Full name"
+                />
+                <input
+                  className="h-11 px-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-600"
+                  placeholder="Email"
+                />
+                <textarea
+                  className="min-h-[120px] px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-600"
+                  placeholder="Message"
+                />
+                <button
+                  type="button"
+                  className="h-11 px-6 rounded-md bg-emerald-600 text-white hover:bg-emerald-500 w-fit"
+                >
+                  Send message
+                </button>
               </form>
             </div>
             <div className="rounded-2xl border border-gray-200 p-6 bg-white shadow-sm">
@@ -229,7 +377,9 @@ export default function Home() {
               <p className="text-gray-600 mt-1">London, United Kingdom</p>
               <div className="mt-6 grid sm:grid-cols-2 gap-4">
                 <div className="p-4 rounded-lg bg-gray-50">
-                  <div className="text-sm text-gray-500">Investor Relations</div>
+                  <div className="text-sm text-gray-500">
+                    Investor Relations
+                  </div>
                   <div className="font-medium">mlglobalenergy@gmail.com</div>
                 </div>
                 <div className="p-4 rounded-lg bg-gray-50">
@@ -237,7 +387,9 @@ export default function Home() {
                   <div className="font-medium">+447742678190z</div>
                 </div>
               </div>
-              <div className="mt-6 text-sm text-gray-600">Registered in England & Wales. Company No. 01234567</div>
+              <div className="mt-6 text-sm text-gray-600">
+                Registered in England & Wales. Company No. 01234567
+              </div>
             </div>
           </div>
         </div>
