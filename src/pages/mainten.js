@@ -1,6 +1,7 @@
-
 "use client";
 import { motion } from "framer-motion";
+import { Construction } from "lucide-react";
+import Image from "next/image";
 
 export default function IndustrialPlant() {
   return (
@@ -21,7 +22,8 @@ export default function IndustrialPlant() {
             Industrial Plant Development & Maintenance
           </h1>
           <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
-            Delivering full-scale EPC solutions for refineries, LNG plants, and petrochemical facilities worldwide.
+            Delivering full-scale EPC solutions for refineries, LNG plants, and
+            petrochemical facilities worldwide.
           </p>
         </motion.div>
       </section>
@@ -33,9 +35,13 @@ export default function IndustrialPlant() {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full h-80 bg-gray-200 rounded-2xl shadow-md flex items-center justify-center"
+          className=" relative w-full h-80 bg-gray-200 rounded-2xl shadow-md flex items-center justify-center"
         >
-          <span className="text-gray-500">[ Industrial Plant Image ]</span>
+          <Image
+            src="/industrialplant.jpg"
+            fill
+            className="object-cover object-center rounded-2xl"
+          />
         </motion.div>
 
         {/* Text */}
@@ -46,14 +52,16 @@ export default function IndustrialPlant() {
         >
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Overview</h2>
           <p className="text-lg leading-relaxed">
-            At ML Global Energy Limited, we provide end-to-end EPC (Engineering, Procurement & 
-            Construction) services for large-scale industrial facilities including refineries, 
-            LNG plants, and petrochemical complexes. 
+            At ML Global Energy Limited, we provide end-to-end EPC (Engineering,
+            Procurement & Construction) services for large-scale industrial
+            facilities including refineries, LNG plants, and petrochemical
+            complexes.
           </p>
           <p className="mt-4 text-lg leading-relaxed">
-            From groundbreaking to commissioning, our projects are designed to achieve 
-            productivity, profitability, and environmental responsibility — ensuring plants 
-            remain competitive and efficient for decades.
+            From groundbreaking to commissioning, our projects are designed to
+            achieve productivity, profitability, and environmental
+            responsibility — ensuring plants remain competitive and efficient
+            for decades.
           </p>
         </motion.div>
       </section>
@@ -66,19 +74,26 @@ export default function IndustrialPlant() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Design & Construction</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            Design & Construction
+          </h2>
           <p className="text-lg leading-relaxed">
-            Our expert teams bring advanced engineering and construction expertise to every project:
+            Our expert teams bring advanced engineering and construction
+            expertise to every project:
           </p>
           <ul className="list-disc pl-6 mt-4 space-y-2 text-lg">
             <li>
-              <strong>Design & Engineering:</strong> Process optimization, safety studies, and environmental compliance built into every plan.
+              <strong>Design & Engineering:</strong> Process optimization,
+              safety studies, and environmental compliance built into every
+              plan.
             </li>
             <li>
-              <strong>Construction:</strong> Civil works, heavy lifting, and mechanical installations executed with precision.
+              <strong>Construction:</strong> Civil works, heavy lifting, and
+              mechanical installations executed with precision.
             </li>
             <li>
-              <strong>Project Delivery:</strong> On-time, on-budget execution supported by world-class procurement systems.
+              <strong>Project Delivery:</strong> On-time, on-budget execution
+              supported by world-class procurement systems.
             </li>
           </ul>
         </motion.div>
@@ -88,9 +103,13 @@ export default function IndustrialPlant() {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full h-80 bg-gray-200 rounded-2xl shadow-md flex items-center justify-center"
+          className=" relative w-full h-80 bg-gray-200 rounded-2xl shadow-md flex items-center justify-center"
         >
-          <span className="text-gray-500">[ Construction Site Image ]</span>
+          <Image
+            src="/maintain/constructionsite.jpg"
+            fill
+            className=" rounded-2xl object-cover object-center"
+          />
         </motion.div>
       </section>
 
@@ -101,9 +120,9 @@ export default function IndustrialPlant() {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full h-80 bg-gray-200 rounded-2xl shadow-md flex items-center justify-center"
+          className="w-full relative h-80 bg-gray-200 rounded-2xl shadow-md flex items-center justify-center"
         >
-          <span className="text-gray-500">[ Maintenance Image ]</span>
+          <Image src="/maintain/maintaina.jpg" fill className=" rounded-2xl object-cover object-center"/>
         </motion.div>
 
         {/* Text */}
@@ -112,9 +131,12 @@ export default function IndustrialPlant() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Maintenance & Modernization</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            Maintenance & Modernization
+          </h2>
           <p className="text-lg leading-relaxed">
-            We don’t just build plants — we keep them operating at peak performance. Our services include:
+            We don’t just build plants — we keep them operating at peak
+            performance. Our services include:
           </p>
           <ul className="list-disc pl-6 mt-4 space-y-2 text-lg">
             <li>Planned shutdowns and turnaround management</li>
@@ -123,7 +145,8 @@ export default function IndustrialPlant() {
             <li>Integration of new technologies with minimal downtime</li>
           </ul>
           <p className="mt-4 text-lg leading-relaxed">
-            This ensures plants remain competitive, reliable, and ready to meet future energy demands.
+            This ensures plants remain competitive, reliable, and ready to meet
+            future energy demands.
           </p>
         </motion.div>
       </section>
@@ -136,20 +159,24 @@ export default function IndustrialPlant() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Energy Efficiency & Sustainability</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            Energy Efficiency & Sustainability
+          </h2>
           <p className="text-lg leading-relaxed">
-            Our commitment to sustainability drives us to deliver solutions that lower costs and 
-            reduce environmental impact:
+            Our commitment to sustainability drives us to deliver solutions that
+            lower costs and reduce environmental impact:
           </p>
           <ul className="list-disc pl-6 mt-4 space-y-2 text-lg">
             <li>Energy-efficient process systems that cut emissions</li>
             <li>Heat recovery technologies to optimize fuel use</li>
-            <li>Green building materials and eco-friendly construction methods</li>
+            <li>
+              Green building materials and eco-friendly construction methods
+            </li>
             <li>Digital monitoring systems for smarter, cleaner operations</li>
           </ul>
           <p className="mt-4 text-lg leading-relaxed italic font-medium">
-            “Our plants are built not just for today’s productivity, but for tomorrow’s sustainability.”  
-            — ML Global Energy
+            “Our plants are built not just for today’s productivity, but for
+            tomorrow’s sustainability.” — ML Global Energy
           </p>
         </motion.div>
 
@@ -158,9 +185,13 @@ export default function IndustrialPlant() {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full h-80 bg-gray-200 rounded-2xl shadow-md flex items-center justify-center"
+          className="w-full relative h-80 bg-gray-200 rounded-2xl shadow-md flex items-center justify-center"
         >
-          <span className="text-gray-500">[ Energy Efficiency Image ]</span>
+          <Image
+            src="/maintain/energy.jpg"
+            fill
+            className=" rounded-2xl object-cover object-center"
+          />
         </motion.div>
       </section>
     </div>

@@ -10,7 +10,7 @@ export default function About() {
       {/* ✅ Hero Section */}
       <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center">
         <Image
-          src="/images/about-hero.jpg" // 📸 replace with your hero image
+          src="/companyvalue.jpg" // 📸 replace with your hero image
           alt="About ML Global Energy"
           fill
           priority

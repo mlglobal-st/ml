@@ -8,6 +8,7 @@ const Nav = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const navLinks = [
+    { label: "Home", href: "/#" },
     {
       label: "Operations",
       href: "#operations",
@@ -30,7 +31,6 @@ const Nav = () => {
         { label: "Governance", href: "/governance" },
       ],
     },
-    { label: "Investors", href: "#investors" },
     { label: "About Us", href: "/aboutus" },
     { label: "Contact", href: "/contact" },
   ];

@@ -1,28 +1,32 @@
-// app/oil-gas/page.tsx  (Next.js App Router)
-// or pages/oil-gas.js if using Pages Router
+// app/oil-gas/page.tsx
 
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function OilGas() {
   return (
-    <div className="bg-gray-50 text-gray-900">
+    <div className="bg-gray-50 text-gray-900 overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center bg-gradient-to-r from-amber-700 to-orange-500 text-white">
-        <div className="absolute inset-0">
-          {/* Banner Image Placeholder */}
-          <div className="w-full h-full bg-black opacity-30"></div>
-        </div>
+      <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center">
+        <Image
+          src="/oilhero.jpg" // replace with your hero image
+          alt="Oil & Gas Exploration Hero"
+          fill
+          priority
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-black/60" />
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="relative z-10 text-center px-6"
         >
-          <h1 className="text-4xl md:text-6xl font-bold">
+          <h1 className="text-4xl md:text-6xl font-bold text-white">
             Oil & Gas Exploration & Production
           </h1>
-          <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
+          <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-white">
             Driving energy discovery and production through innovation, safety,
             and sustainable practices worldwide.
           </p>
@@ -31,14 +35,19 @@ export default function OilGas() {
 
       {/* Section 1 - Overview */}
       <section className="max-w-7xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-12 items-center">
-        {/* Image Placeholder */}
+        {/* Image */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full h-80 bg-gray-200 rounded-2xl shadow-md flex items-center justify-center"
+          className="relative w-full h-80 md:h-[450px] rounded-2xl overflow-hidden shadow-md"
         >
-          <span className="text-gray-500">[ Exploration Image ]</span>
+          <Image
+            src="/oilexplor.jpg"
+            alt="Oil exploration process"
+            fill
+            className="object-cover object-center"
+          />
         </motion.div>
 
         {/* Text */}
@@ -86,27 +95,37 @@ export default function OilGas() {
           </ul>
         </motion.div>
 
-        {/* Image Placeholder */}
+        {/* Image */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full h-80 bg-gray-200 rounded-2xl shadow-md flex items-center justify-center"
+          className="relative w-full h-80 md:h-[450px] rounded-2xl overflow-hidden shadow-md"
         >
-          <span className="text-gray-500">[ Drilling Rig Image ]</span>
+          <Image
+            src="/drillingrig.jpg"
+            alt="Offshore drilling rig"
+            fill
+            className="object-cover object-center"
+          />
         </motion.div>
       </section>
 
       {/* Section 3 - Technology & Innovation */}
       <section className="max-w-7xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-12 items-center">
-        {/* Image Placeholder */}
+        {/* Image */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full h-80 bg-gray-200 rounded-2xl shadow-md flex items-center justify-center"
+          className=" relative w-full h-80 md:h-[450px] rounded-2xl overflow-hidden shadow-md"
         >
-          <span className="text-gray-500">[ Technology Image ]</span>
+          <Image
+            src="/oiltech.jpg"
+            alt="Oil & gas technology innovation"
+            fill
+            className="object-cover object-center"
+          />
         </motion.div>
 
         {/* Text */}
@@ -155,14 +174,19 @@ export default function OilGas() {
           </p>
         </motion.div>
 
-        {/* Image Placeholder */}
+        {/* Image */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full h-80 bg-gray-200 rounded-2xl shadow-md flex items-center justify-center"
+          className="relative w-full h-80 md:h-[450px] rounded-2xl overflow-hidden shadow-md"
         >
-          <span className="text-gray-500">[ Sustainability Image ]</span>
+          <Image
+            src="/sustain.jpg"
+            alt="Sustainability in oil and gas"
+            fill
+            className="object-cover object-center"
+          />
         </motion.div>
       </section>
     </div>
