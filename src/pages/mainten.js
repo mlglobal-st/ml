@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function IndustrialPlant() {
   return (
-    <div className="bg-gray-50 text-gray-900">
+    <div className="bg-gray-50 text-gray-900 overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center bg-gradient-to-r from-emerald-800 to-emerald-500 text-white">
         <div className="absolute inset-0">
