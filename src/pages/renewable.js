@@ -82,7 +82,7 @@ export default function RenewableHybridEnergy() {
           >
             {/* Replace with real image */}
             <Image
-              src="/renewable-placeholder.jpg"
+              src="/renewable.jpg"
               alt="Renewable & Hybrid Energy"
               fill
               className="object-cover"
