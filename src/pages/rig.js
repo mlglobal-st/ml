@@ -8,7 +8,7 @@ export default function RigConstruction() {
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center">
         <Image
-          src="/images/rig-hero.jpg" // 📸 Replace with actual hero image
+          src="/offshore.jpg" // 📸 Replace with actual hero image
           alt="Rig Construction & Offshore Engineering"
           fill
           className="object-cover"
@@ -63,8 +63,9 @@ export default function RigConstruction() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="w-full h-80 bg-gray-200 flex items-center justify-center">
-            📸 Image Placeholder (Offshore rig construction)
+          <div className=" relative w-full h-80 bg-gray-200 flex items-center justify-center">
+            <Image src="/offshore2.jpg" fill  className=" rounded-2xl"/>
+
           </div>
         </motion.div>
       </section>
@@ -116,8 +117,8 @@ export default function RigConstruction() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="w-full h-96 bg-gray-200 flex items-center justify-center">
-              📸 Image Placeholder (Crew & offshore operations)
+            <div className="w-full relative h-96 bg-gray-200 flex items-center justify-center">
+              <Image src="/offshoreeng.jpg" fill className=" rounded-2xl"/>
             </div>
           </motion.div>
         </div>
@@ -132,8 +133,8 @@ export default function RigConstruction() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="w-full h-80 bg-gray-200 flex items-center justify-center">
-            📸 Image Placeholder (Rig safety systems / modern controls)
+          <div className="w-full relative h-80 bg-gray-200 flex items-center justify-center">
+            <Image src="/rigst.jpg" fill className=" rounded-2xl"/>
           </div>
         </motion.div>
 

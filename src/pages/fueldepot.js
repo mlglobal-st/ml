@@ -10,7 +10,7 @@ export default function FuelDepot() {
       {/* ✅ Hero Section */}
       <section className="relative w-full h-[75vh] flex items-center justify-center">
         <Image
-          src="/images/fuel-depot-hero.jpg" // replace with your hero image
+          src="/depot.jpg" // replace with your hero image
           alt="Fuel Depot Hero"
           fill
           className="object-cover brightness-75"
@@ -106,7 +106,7 @@ export default function FuelDepot() {
             className="relative w-full h-96 rounded-lg overflow-hidden shadow-lg"
           >
             <Image
-              src="/images/fuel-storage.jpg" // replace with real storage tank image
+              src="/tanker.jpg" // replace with real storage tank image
               alt="Fuel Storage Facility"
               fill
               className="object-cover"
