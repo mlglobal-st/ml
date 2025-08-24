@@ -94,7 +94,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold">
-                Operations in the UK and Malaysia
+                Operations in the UK and Europe and Asia
               </h2>
               <p className="mt-4 text-gray-700">
                 We focus on mature, late-life assets where we can responsibly
@@ -184,24 +184,29 @@ export default function Home() {
 
       {/* About Us */}
 
-      <section className="flex  md:h-full h-[90vh] md:w-[100%]  flex-wrap flex-col md:flex-wrap md:flex-row justify-between p-5">
-        <div className="md:w-[45%] w-full space-x-5 justify-around border rounded-2xl border-gray-200 hover:border-green-200 shadow-sm hover:shadow-md p-5 flex flex-col">
-          <h1 className=" text-4xl font-bold">About Us</h1>
-          <p className="md:w-4/6">
-            At ML Global Resources, we are more than an energy company — we are
-            a driving force behind the infrastructure that fuels nations,
-            empowers industries, and supports communities across the globe.
-          </p>
-          <Link href=""><p className= " text-blue-800">See More</p></Link>
-        </div>
-        <div className="md:w-3/6 w-full">
-          <img
-            src="/fourmen.jpg"
-            alt="men"
-            className="w-full h-full object-cover rounded-2xl"
-          />
-        </div>
-      </section>
+      <section className="flex flex-col md:flex-row justify-between p-5 max-w-7xl mx-auto gap-8">
+  {/* Text */}
+  <div className="md:w-1/2 w-full border rounded-2xl border-gray-200 hover:border-green-200 shadow-sm hover:shadow-md p-6 flex flex-col justify-center">
+    <h1 className="text-3xl md:text-4xl font-bold">About Us</h1>
+    <p className="mt-4 text-gray-700">
+      At ML Global Resources, we are more than an energy company — we are
+      a driving force behind the infrastructure that fuels nations,
+      empowers industries, and supports communities across the globe.
+    </p>
+    <Link href="/aboutus">
+      <p className="mt-4 text-blue-800 font-medium">See More</p>
+    </Link>
+  </div>
+
+  {/* Image */}
+  <div className="md:w-1/2 w-full">
+    <img
+      src="/fourmen.jpg"
+      alt="Team working together"
+      className="w-full h-64 md:h-full object-cover rounded-2xl"
+    />
+  </div>
+</section>
 
       {/* Media / Press */}
       <section id="media" className="py-20 bg-gray-50">
@@ -364,12 +369,13 @@ export default function Home() {
                   className="min-h-[120px] px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-600"
                   placeholder="Message"
                 />
-                <button
+                {/* <button
                   type="button"
                   className="h-11 px-6 rounded-md bg-emerald-600 text-white hover:bg-emerald-500 w-fit"
+                  src
                 >
                   Send message
-                </button>
+                </button> */}
               </form>
             </div>
             <div className="rounded-2xl border border-gray-200 p-6 bg-white shadow-sm">
@@ -384,7 +390,7 @@ export default function Home() {
                 </div>
                 <div className="p-4 rounded-lg bg-gray-50">
                   <div className="text-sm text-gray-500">Media Enquiries</div>
-                  <div className="font-medium">+447742678190z</div>
+                  <div className="font-medium">+447742678190</div>
                 </div>
               </div>
               <div className="mt-6 text-sm text-gray-600">

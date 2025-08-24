@@ -1,7 +1,7 @@
 // components/Layout.js
 import Nav from "./Nav";
 import Link from "next/link";
-
+import Image from "next/image";
 export default function Layout({ children }) {
   return (
     <div className="flex flex-col min-h-screen">
@@ -11,7 +11,7 @@ export default function Layout({ children }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2">
-              <div className="h-8 w-8 rounded bg-emerald-600" />
+              <Image src="/logo1.png" width="100" height="100" className="h-8 w-8 rounded bg-amber-50" />
               <span className="font-semibold text-white">Ml Global</span>
             </div>
             <p className="mt-3 text-sm text-gray-400 max-w-xs">
