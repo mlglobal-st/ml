@@ -28,7 +28,7 @@ export default function Home() {
   ];
 
   const stats = [
-    { label: "Countries", value: "2", sub: "UK & Malaysia" },
+    { label: "Countries", value: "300", sub: "World Wide" },
     { label: "Employees", value: "1,000+", sub: "Group-wide" },
     { label: "Scope 1&2", value: "-40%", sub: "UK emissions since 2018" },
   ];

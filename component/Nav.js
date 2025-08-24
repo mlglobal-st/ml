@@ -32,11 +32,10 @@ const Nav = () => {
   return (
     <header className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/80 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="h-16 flex items-center justify-between">
+        <div className="h-25 flex items-center justify-between">
           {/* Logo */}
           <Link href="/#" className="flex items-center gap-2">
-            <Image src="/logo1.png" width="100" height="100"  className="h-8 w-8 rounded" />
-            <span className="font-semibold">Ml global</span>
+            <Image src="/logo1.png" width="100" height="100"  className="h-[50%] w-[80%] rounded" />
           </Link>
 
           {/* Desktop Navigation */}
