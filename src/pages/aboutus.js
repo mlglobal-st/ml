@@ -156,25 +156,25 @@ export default function About() {
           <p className="font-semibold">Awards & Recognitions</p>
           <ul className="list-disc list-inside space-y-2">
             <li>
-              <strong>Global Energy Leadership Award – Energy Council, 2018</strong>: Recognizing executives who have demonstrated exceptional vision,
+              <strong>Global Energy Leadership Award – Energy Council,</strong>: Recognizing executives who have demonstrated exceptional vision,
               innovation, and influence in shaping the future of the global
               energy landscape.
             </li>
             <li>
               <strong>Petrochemical Industry Excellence Award – World Petroleum
-              Council, 2020</strong>: Awarded for achievements in petrochemical engineering,
+              Council</strong>: Awarded for achievements in petrochemical engineering,
               particularly in high-efficiency pipeline design and advanced
               offshore rig safety systems.
             </li>
             <li>
               <strong>Energy Transition Pioneer Medal – International Renewable
-              & Clean Energy Forum, 2022</strong>: Honoring leadership in bridging the gap between fossil fuels and
+              & Clean Energy Forum</strong>: Honoring leadership in bridging the gap between fossil fuels and
               clean energy, guiding ML Global into wind, solar, and nuclear
               hybrid projects.
             </li>
             <li>
-              <strong>Chartered Engineer of the Year – Engineering Council UK,
-              2023</strong>: A rare recognition for Chartered Engineers who made large-scale
+              <strong>Chartered Engineer of the Year – Engineering Council UK
+                </strong>: A rare recognition for Chartered Engineers who made large-scale
               contributions through innovation, mentoring, and industry
               leadership.
             </li>

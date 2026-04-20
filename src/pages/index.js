@@ -394,7 +394,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-6 text-sm text-gray-600">
-                Registered in England & Wales. Company No. 01234567
+                Registered in London. Company No. 2778741
               </div>
             </div>
           </div>
