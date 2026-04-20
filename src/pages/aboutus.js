@@ -58,7 +58,7 @@ export default function About() {
         >
           <h2 className="text-2xl md:text-4xl font-bold">Early Life & Education</h2>
           <p>
-            Mr. Michael Lee Yeong was born in the vibrant city of Norwich,
+            Mr. justin Lee Huang was born in the vibrant city of Norwich,
             Norfolk, United Kingdom, into a richly multicultural family. His
             mother, originally from Miri Sarawak Malaysia and his father, a
             British Korean, instilled in him a deep appreciation for diverse
