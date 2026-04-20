@@ -26,7 +26,7 @@ export default function About() {
           <h1 className="text-4xl md:text-6xl font-bold text-white">About Us</h1>
           <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-white">
             Discover the story, vision, and leadership of{" "}
-            <span className="font-semibold">Mr. Michael Lee Yeong</span> — CEO
+            <span className="font-semibold">Mr. justin Lee huang</span> — CEO
             of ML Global Energy Limited.
           </p>
         </motion.div>
